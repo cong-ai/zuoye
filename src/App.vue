@@ -10,8 +10,7 @@
       <walKing />
     </div>
     <br />
-    <br />
-    <br />
+    <p>--------------------------</p>
     <div>
       <modIfied />
     </div>
