@@ -1,58 +1,41 @@
 <template>
   <div>
     <div>
-      <span>选择所在地区：</span>
-      <input type="radio" value="中国大陆" name="area" v-model="area" />中国大陆
-      <input type="radio" value="中国香港" name="area" v-model="area" />中国香港
+      <fondLove />
     </div>
+    <br />
+    <br />
+    <br />
     <div>
-      <span>手机号码：</span>
-      <input type="text" name="phone" v-model="phone" />
+      <walKing />
     </div>
+    <br />
+    <br />
+    <br />
     <div>
-      <span>年龄: </span>
-      <input type="text" name="age" v-model="age" />
-    </div>
-    <div>
-      <span>密码：</span>
-      <input type="password" name="password" v-model="password" />
-    </div>
-    <div>
-      <span>爱好：</span>
-      <input type="checkbox" v-model="hobby" value="看书" />看书
-      <input type="checkbox" v-model="hobby" value="学习" />学习
-      <input type="checkbox" v-model="hobby" value="写代码" />写代码
-      <input type="checkbox" v-model="hobby" value="游戏" />游戏
-    </div>
-    <div><input type="checkbox" v-model="isgrow" /> 记住密码</div>
-    ================================================================
-    <div>
-      我来自：{{ area }}
-      <br />
-      手机号码是：{{ phone }}
-      <br />
-      年龄是：{{ age }}
-      <br />
-      密码是：{{ password }}
-      <br />
-      爱好是：{{ hobby.join(",") }}
-      <br />
-      是否记住密码：{{ isgrow ? "是" : "否" }}
+      <modIfied />
     </div>
   </div>
 </template>
 
 <script>
+import fondLove from "./components/fond-love.vue";
+import walKing from "./components/wal-king.vue";
+import modIfied from "./components/mod-ified.vue";
 export default {
   data() {
-    return {
-      phone: "12345678900",
-      password: "123123",
-      hobby: ["学习", "写代码", "看书"],
-      age: 123,
-      area: "中国大陆",
-      isgrow: "",
-    };
+    return {};
   },
+
+  components: {
+    fondLove,
+    walKing,
+    modIfied,
+  },
+  computed: {},
+  created() {},
+  mounted() {},
+  methods: {},
 };
 </script>
+<style lang="less" scoped></style>
